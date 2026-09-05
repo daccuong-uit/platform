@@ -18,15 +18,7 @@ const HTTP_STATUS_ERROR_NAMES: Record<number, string> = {
   [HttpStatus.SERVICE_UNAVAILABLE]: 'Service Unavailable',
   [HttpStatus.GATEWAY_TIMEOUT]: 'Gateway Timeout',
 };
-
-export interface ApiErrorResponse {
-  statusCode: number;
-  error: string;
-  message: string;
-  path?: string;
-  timestamp: string;
-  errors?: Record<string, string[]>;
-}
+import { ApiErrorResponse } from './api-response.types';
 
 @Catch()
 export class AllExceptionsFilter implements ExceptionFilter {

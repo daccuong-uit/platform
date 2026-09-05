@@ -1,6 +1,6 @@
 {
   "name": "@daccuong-uit/platform-http-common",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NestJS HTTP filters, interceptors, and envelope response types",
   "private": false,
   "main": "dist/index.js",

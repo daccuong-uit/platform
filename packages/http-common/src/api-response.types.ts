@@ -27,3 +27,14 @@ export interface ApiSuccessResponse<T = unknown> {
     [key: string]: unknown;
   };
 }
+
+export interface ApiErrorResponse {
+  statusCode: number;
+  error: string;
+  message: string;
+  path?: string;
+  timestamp: string;
+  /** Validation field errors — key = field name, value = array of messages */
+  errors?: Record<string, string[]>;
+}
+
