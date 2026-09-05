@@ -1,0 +1,37 @@
+{
+  "name": "@daccuong-uit/platform-event-bus",
+  "version": "1.0.0",
+  "description": "Enterprise event publisher and subscriber transport client for microservices",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "test": "jest"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/company/platform-transport-sdk.git",
+    "directory": "packages/event-bus"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@daccuong-uit/contracts-events": "^1.0.0",
+    "ioredis": "^5.3.0"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^10.0.0"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^10.0.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

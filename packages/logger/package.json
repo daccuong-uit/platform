@@ -1,0 +1,34 @@
+{
+  "name": "@daccuong-uit/platform-logger",
+  "version": "1.0.0",
+  "description": "Enterprise Winston logger with OpenTelemetry trace and span correlation",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "test": "jest"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/company/platform-core-sdk.git",
+    "directory": "packages/logger"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@opentelemetry/api": "^1.8.0",
+    "winston": "^3.11.0",
+    "winston-transport": "^4.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

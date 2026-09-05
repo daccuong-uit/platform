@@ -1,0 +1,32 @@
+{
+  "name": "@daccuong-uit/platform-cache",
+  "version": "1.0.0",
+  "description": "Enterprise Redis client factory with exponential backoff and connection resilience",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "test": "jest"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/company/platform-core-sdk.git",
+    "directory": "packages/cache"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "ioredis": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

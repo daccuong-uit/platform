@@ -1,0 +1,32 @@
+{
+  "name": "@daccuong-uit/contracts-events",
+  "version": "1.0.0",
+  "description": "Canonical domain event definitions and type guards for polyrepo microservices",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "test": "echo \"Contracts valid\""
+  },
+  "keywords": [
+    "contracts",
+    "domain-events",
+    "microservices"
+  ],
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/company/platform-contracts.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
