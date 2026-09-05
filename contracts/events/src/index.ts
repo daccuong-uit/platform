@@ -14,7 +14,7 @@ export interface DomainEvent<TPayload = Record<string, unknown>> {
 
 /**
  * Payload for user.created.v1
- * Emitted when a new account is registered in auth-service.
+ * Emitted when a new user is registered in iam-service.
  */
 export interface UserCreatedPayload {
   userId: string;

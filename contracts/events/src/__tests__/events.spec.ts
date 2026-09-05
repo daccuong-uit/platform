@@ -11,7 +11,7 @@ describe('Contracts Events', () => {
       event_id: '123e4567-e89b-12d3-a456-426614174000',
       event_name: 'user.created.v1',
       occurred_at: new Date().toISOString(),
-      producer: 'auth-service',
+      producer: 'iam-service',
       payload: {
         userId: '123e4567-e89b-12d3-a456-426614174000',
         email: 'user@example.com',
