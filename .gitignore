@@ -1,0 +1,14 @@
+# Dependencies & Build Artifacts
+node_modules/
+dist/
+build/
+.turbo/
+*.log
+*.tsbuildinfo
+
+# Environment & Local Secrets
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
